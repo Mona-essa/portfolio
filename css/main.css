@@ -1,0 +1,229 @@
+:root{
+    --dark-color:#19283F;
+    --green-color:#33D1CC;
+    --orang-color:#FF3150;
+    --yellow-color:#FFC400;
+    --section-color:#EFF7FA;
+}
+body{
+    height: 5000px;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+   overflow-x: hidden;
+}
+.main-btn{
+    background-color: var(--orang-color);
+    color:var(--yellow-color);
+    border: none;
+    padding: 0.5rem 1rem;
+    font-weight: bold;
+}
+.main-btn:hover{
+    background-color: var(--yellow-color);
+}
+/* start navbar*/
+.navbar{
+    background-color:var(--dark-color);
+   }
+.navbar .navbar-nav .nav-link{
+    color:white;
+}
+.navbar .navbar-nav .nav-linka.active,
+.navbar .navbar-nav .nav-link:hover,
+.navbar .navbar-nav .nav-link:focus{
+    color:var(--green-color);
+}
+.navbar .search{
+    border-left: 1px solid var(--green-color);
+    color:var(--green-color);
+    padding:10px;
+}
+.navbar .navbar-toggler{
+    color:white;
+    font-size: 25px;
+    border:1px solid white;
+}
+.navbar .navbar-toggler:focus{
+    box-shadow: none;
+}
+
+/* end navbar*/
+
+/*start landing*/
+.landing{
+    background-color: var(--dark-color);
+    height: calc(100vh - 75px);
+}
+/*end landing*/
+
+/*start features*/
+.fa-snowflake{
+    font-size: 10rem;
+    color: var(--yellow-color);
+} 
+.features{
+    position: relative;
+    background-color: var(--section-color);
+}
+.main-title::after{
+    content: " ";
+    position: absolute;
+    width:120px;
+    height: 5px;
+    background-color: var(--green-color);
+    transform: translate(-50%,-50%);
+}
+.feat i{
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+.features h4{
+    color:var(--yellow-color)
+}
+/*end features*/
+
+/*start our-work*/
+.our-work{
+    background-color: var(--section-color);
+}
+.our-work ul li{
+    list-style: none;
+    margin-right: 10px;
+    padding:5px 10px;
+    cursor: pointer;
+}
+.our-work ul .active{
+     background-color: var(--orang-color);
+     color:var(--yellow-color)
+}
+.our-work ul li:not(.active):hover{
+    color:var(--orang-color);
+}
+.our-work .box{
+    padding:5px;
+    overflow: hidden;
+    position: relative;
+    background-color: white;
+}
+.our-work .box::before{
+    content: attr(data-work);
+    position: absolute;
+    width: calc(100% - 10px);
+    height: calc(100% - 10px);
+    background-color:rgb(51 209 204 / 76%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:white;
+    transition: .4s;
+    transform: translateX(calc(-100% - 10px));
+    }
+    .our-work .box:hover::before{
+        transform: translateX(0);
+    }
+/*end our-work*/
+
+/*start stuff*/
+.stuff .description{
+    max-width: 500px;
+}
+/*end stuff*/
+
+/*start team*/
+.team{
+    background-color: var(--section-color);
+}
+.team h4{
+    background-color: var(--green-color);
+    padding:20px 0;
+    color:white;
+    font-weight: bold;
+}
+/*end team*/
+
+/*strat project*/
+.project{
+    background-color: var(--dark-color);
+}
+/*end project*/
+
+/*strat blog*/
+.blog{
+    background-color: var(--section-color);
+}
+.blog img{
+    transition: .3s;
+    margin-bottom: 5px;
+
+}
+.blog .box{
+    border: 1px solid #ddd;
+    margin-bottom: 10px;
+   }
+.blog img:hover{
+    transform: scale(1.1,1.1);
+}
+.blog p{
+    font-weight: bold;
+    font-size: 20px;
+}
+/*end blog*/
+
+/*strat subscribe*/
+.subscribe{
+    background-color: var(--yellow-color);
+}
+.subscribe input{
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid white;
+}
+.subscribe input:focus{
+    outline: none;
+}
+.subscribe ::placeholder{
+    color:white;
+}
+.subscribe button{
+    background-color: var(--dark-color);
+    color:var(--yellow-color);
+    border-radius: 20px;
+    font-weight: bold;
+    font-size: 20px;
+    margin-top:10px;
+}
+
+/*end subscribe*/
+
+/*strart footer*/
+.footer{
+    background-color: var(--dark-color);
+}
+.footer span{
+    color:var(--yellow-color);
+}
+.fa-facebook,
+.fa-linkedin
+{
+   background-color: #1877F2;
+}
+.fa-google-plus-g{
+    background-color:#FF0000 ;
+}
+.fa-twitter{
+    background-color:#1DA1F2 ;
+}
+.footer i{
+    color:white;
+    padding:5px;
+    font-size: 20px;
+}
+.footer li{
+    transition: .3s;
+}
+.footer li:hover{
+    transform: scale(1.1,1.1);
+    color:#ddd;
+}
+/*end footer*/
