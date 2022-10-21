@@ -145,6 +145,12 @@ body{
     width:200px;
     height: 200px;
 }
+@media(max-width:991px){
+    .carousel-inner img{
+        width:100px;
+        height: 100px;
+    }
+}
 /*end team*/
 
 /*strat project*/
