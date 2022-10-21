@@ -140,6 +140,11 @@ body{
     color:white;
     font-weight: bold;
 }
+
+.carousel-inner img{
+    width:200px;
+    height: 200px;
+}
 /*end team*/
 
 /*strat project*/
