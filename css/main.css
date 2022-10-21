@@ -22,6 +22,16 @@ body{
 .main-btn:hover{
     background-color: var(--yellow-color);
 }
+@media(max-width:991px){
+    .main-btn{
+        padding:0.5rem;
+        font-weight: lighter;
+    }
+    .stuff .main-btn{
+       margin-bottom: 15px;
+        
+    }
+}
 /* start navbar*/
 .navbar{
     background-color:var(--dark-color);
@@ -152,6 +162,15 @@ body{
     }
 }
 /*end team*/
+/*start tech*/
+.tech .tech-item{
+    transition: .3s;
+}
+.tech .tech-item:hover{
+    transform: translate(10px,10px);
+    box-shadow: 10px 10px 20px var(--dark-color);
+}
+/*end tech*/
 
 /*strat project*/
 .project{
